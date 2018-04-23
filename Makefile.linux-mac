@@ -1,0 +1,22 @@
+#
+# smallptGPU & smallptCPU Makefile
+#
+
+ATISTREAMSDKROOT=/home/david/src/ati-stream-sdk-v2.0-lnx64
+
+CC=gcc
+CCFLAGS=-O3 -msse2 -mfpmath=sse -ftree-vectorize -funroll-loops -Wall \
+	-I$(ATISTREAMSDKROOT)/include -L$(ATISTREAMSDKROOT)/lib/x86_64 -lglut -lOpenCL
+# Jens's patch for MacOS, comment the 2 lines above and un-comment the lines below
+#CCFLAGS=-O3 -ftree-vectorize -msse -msse2 -msse3 -mssse3 -fvariable-expansion-in-unroller \
+#	-cl-fast-relaxed-math -cl-mad-enable -Wall -framework OpenCL -framework OpenGl -framework Glut
+
+default: all
+
+all: Makefile smallptGPU
+
+smallptGPU: smallptGPU.c displayfunc.c Makefile vec.h camera.h geom.h displayfunc.h simplernd.h scene.h geomfunc.h
+	$(CC) $(CCFLAGS) -DSMALLPT_GPU -o smallptGPU smallptGPU.c displayfunc.c
+
+clean:
+	rm -rf smallptGPU image.ppm

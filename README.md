@@ -12,7 +12,7 @@ glut32.dll has been downloaded from Nate Robins's http://www.xmission.com/~nate/
 
 Quick start
 ==============
-./gpu!caustic3.bat
+run gpu!caustic3.bat  
 or one of bat files
 
 files without gpu in file name will run cpu version of renderer
@@ -23,9 +23,8 @@ How to compile
 on Windows  
 make
 
-on Linux/Mac
-Just rename Makefile.linux-mac to Makefile and edit use an appropriate value for ATISTREAMSDKROOT.
-and  
+on Linux/Mac  
+rename Makefile.linux-mac to Makefile and edit use an appropriate value for ATISTREAMSDKROOT. and  
 make
 
 Key bindings
@@ -45,7 +44,7 @@ PageUp and PageDown - move camera target up and down
 History
 =======
 
-MY VERSION - Removed smallptCPU.c and executive for it creation, script for build complex scene, preprocessed kernel, added bat files for cpu renderer, added Makefile for Windows, removed tgz creation for Windows version of Makefile
+MY VERSION - Removed smallptCPU.c and binary creation of it, script for build complex scene, preprocessed kernel, added bat files for cpu renderer, added Makefile for Windows, removed tgz creation for Windows version of Makefile
 
 V1.6 - Thanks to Jens and all the discussion at http://www.luxrender.net/forum/viewtopic.php?f=21&t=2947&start=240#p29397
 now SmallptGPU works fine with MacOS and NVIDIA cards. A bug in the Apple's OpenCL

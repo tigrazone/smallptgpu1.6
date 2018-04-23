@@ -20,27 +20,27 @@ files without gpu in file name will run cpu version of renderer
 
 How to compile
 ==============
-on Windows
+on Windows  
 make
 
 on Linux/Mac
 Just edit the Makefile and use an appropriate value for ATISTREAMSDKROOT.
-and
+and  
 make
 
 Key bindings
 ============
 
-'p' - save image.ppm
-ESC - exit
-Arrow keys - rotate camera left/right/up/down
-'a' and 'd' - move camera left and right
-'w' and 's' - move camera forward and backward
-'r' and 'f' - move camera up and down
-PageUp and PageDown - move camera target up and down
-' ' - refresh the window
-'+' and '-' - to select next/previous object
-'2', '3', '4', '5', '6', '8', '9' - to move selected object
+'p' - save image.ppm  
+ESC - exit  
+Arrow keys - rotate camera left/right/up/down  
+'a' and 'd' - move camera left and right  
+'w' and 's' - move camera forward and backward  
+'r' and 'f' - move camera up and down  
+PageUp and PageDown - move camera target up and down  
+' ' - refresh the window  
+'+' and '-' - to select next/previous object  
+'2', '3', '4', '5', '6', '8', '9' - to move selected object  
 
 History
 =======

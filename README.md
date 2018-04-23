@@ -12,7 +12,8 @@ glut32.dll has been downloaded from Nate Robins's http://www.xmission.com/~nate/
 
 Quick start
 ==============
-./gpu!caustic3.bat
+run  
+./gpu!caustic3.bat  
 or one of bat files
 
 files without gpu in file name will run cpu version of renderer

@@ -23,9 +23,8 @@ How to compile
 on Windows  
 make
 
-on Linux/Mac
-Just rename Makefile.linux-mac to Makefile and edit use an appropriate value for ATISTREAMSDKROOT.
-and  
+on Linux/Mac  
+rename Makefile.linux-mac to Makefile and edit use an appropriate value for ATISTREAMSDKROOT. and  
 make
 
 Key bindings

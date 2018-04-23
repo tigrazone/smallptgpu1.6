@@ -24,7 +24,7 @@ on Windows
 make
 
 on Linux/Mac
-Just edit the Makefile and use an appropriate value for ATISTREAMSDKROOT.
+Just rename Makefile.linux-mac to Makefile and edit use an appropriate value for ATISTREAMSDKROOT.
 and  
 make
 
@@ -45,6 +45,7 @@ PageUp and PageDown - move camera target up and down
 History
 =======
 
+MY VERSION - Removed smallptCPU.c, script for build complex scene, preprocessed kernel, added bat files for cpu renderer, added Makefile for Windows
 
 V1.6 - Thanks to Jens and all the discussion at http://www.luxrender.net/forum/viewtopic.php?f=21&t=2947&start=240#p29397
 now SmallptGPU works fine with MacOS and NVIDIA cards. A bug in the Apple's OpenCL
